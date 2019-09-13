@@ -15,7 +15,7 @@
 | Binary | 0.000244805s | 0.000244133s  |
 
 ## Discussion:
-    For both the make fast and make with -g flags executions of the program 
+   For both the make fast and make with -g flags executions of the program 
 the binary search functions worked faster then the linear search functions.
 Though it caused a less prominent time reduction on the make fast execution 
 of the results, the pointer implementations of the linear and binary searches worked faster than their non-pointer counterparts. This difference would have 
@@ -27,7 +27,7 @@ the time for the binary search with pointers actually increased from the vector
 version which was surprising. For other runs of the program this number was 
 usually smaller. 
 
-    After the files were executed with the make fast method the linear 
+   After the files were executed with the make fast method the linear 
 functions became much faster by a factor of about 5 tenths for both linear 
 functions. This seems to indicate these functions inserted  a lot of -g flag 
 markers for debugging. This is likely because the linear functions require 
