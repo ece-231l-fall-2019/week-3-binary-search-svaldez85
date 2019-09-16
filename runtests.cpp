@@ -87,8 +87,21 @@ int main()
                 int found = 0;
                 for (size_t i = 0; i < search.size(); i++)
                 {
-                        if (binarySearch(numbers.data(), numbers.data() + numbers.size(),
-                                        search[i]))
+                        if (binarySearch(numbers.data(), numbers.data() + numbers.size(), search[i]))
+                                found++;
+                }
+
+                std::cout << "Found "<< found << "/"
+                        << search.size() << " values." << std::endl;
+	}
+
+        {
+                Timer timer("Time to binary search all values recursively (pointers): ");
+
+                int found = 0;
+                for (size_t i = 0; i < search.size(); i++)
+                {
+                        if (binarySearchRecursive(numbers.data(), numbers.data() + numbers.size(), search[i]))
                                 found++;
                 }
 
@@ -97,6 +110,6 @@ int main()
         }
 
 
-	return 0;
+        return 0;
 }
 
