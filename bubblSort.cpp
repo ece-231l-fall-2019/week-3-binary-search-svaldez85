@@ -1,5 +1,5 @@
 
-void bubbleSort(int *begin, int *end)
+void bubbleSort(int *begin, const int *end)
 {
 	while (begin != end)
 	{
